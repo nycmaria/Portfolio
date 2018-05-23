@@ -1,0 +1,29 @@
+.container, .projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  main {
+    width: auto;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project {
+    width: 100%;
+  }
+}
